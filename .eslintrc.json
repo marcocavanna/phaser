@@ -1,0 +1,38 @@
+{
+  "env": {
+    "node": true,
+    "jest": true,
+    "es6": true
+  },
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb-base"
+  ],
+  "rules": {
+    "comma-dangle": ["error", "never"],
+    "padded-blocks": "off",
+    "no-trailing-spaces": ["error"],
+    "no-multi-spaces": ["error", { "ignoreEOLComments": true, "exceptions": { "Property": true, "VariableDeclarator": true } }],
+    "no-param-reassign": ["error"],
+    "no-underscore-dangle": "off",
+    "max-len": ["error", { "code": 100, "ignoreTrailingComments": true, "ignoreStrings": true, "ignoreTemplateLiterals": true, "ignoreRegExpLiterals": true }],
+    "no-use-before-define": "off",
+    "brace-style": ["error", "stroustrup", { "allowSingleLine": true }],
+    "object-curly-newline": "off",
+    "prefer-promise-reject-errors": "off",
+    "no-nested-ternary": "off",
+    "prefer-arrow-callback": ["error", { "allowNamedFunctions": true }],
+    "key-spacing": ["error", { "align": { "beforeColon": true, "afterColon": true, "on": "colon", "mode": "minimum" } }],
+    "no-plusplus": "off",
+    "camelcase": "off",
+    "class-method-use-this": "off",
+    "constructor-super": ["error"],
+    "no-this-before-super": ["error"],
+    "linebreak-style": "off"
+  },
+  "parserOptions": {
+    "babelOptions": {
+      "configFile": "./babel.config.js"
+    }
+  }
+}

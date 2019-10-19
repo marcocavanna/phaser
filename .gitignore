@@ -1,0 +1,11 @@
+# System Files
+.vscode
+.DS_Store
+
+# Folders
+node_modules
+coverage
+
+# Dist Folder
+/lib
+/t.js
