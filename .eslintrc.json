@@ -28,7 +28,10 @@
     "class-method-use-this": "off",
     "constructor-super": ["error"],
     "no-this-before-super": ["error"],
-    "linebreak-style": "off"
+    "linebreak-style": "off",
+    "arrow-parens" : ["error", "as-needed", {
+      "requireForBlockBody" : true
+    }]
   },
   "parserOptions": {
     "babelOptions": {
