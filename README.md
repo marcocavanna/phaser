@@ -8,13 +8,12 @@ A warning messagge or a complete messagge in case of success.
 Go ahead to see the fully documentation.
 ___
 ## `Task()`
-This is the class `Phaser` takes to create a Task.
+This is the class [`Phaser`](#phaser) takes to create a Task.
 It has a constructor function and some other Method.
 
 ### `constructor(name, action, option)`
 The constructor is called with 3 parameters. Usually you can set only the first two.   
 When you set the Function action, the task wait the return state to continue the Log.  
-
 #### Params
 - `name`
   - **type**: `string`
@@ -80,11 +79,11 @@ returned while generating the status. It can be Incremented or Decremented.
 ___
 ## `Phaser()`
 In This section are contained all the Methods `Phaser` has got.   
-It use Task and Writer to create the log in the console, but he has got    
+It uses Task and Writer to create a log in the console, but he has got    
 many other usefull Methods.
 
 ### `constructor(description, options, parent)`
-The constructor creates a new Phaser object.
+The constructor creates a new `Phaser` object.
 
 #### Params
 - `description`
@@ -95,14 +94,14 @@ The constructor creates a new Phaser object.
   - **description**: Some options for the Phase
   - `autoStart`
     - **type**: `Boolean`
-    - **description**: If it is 'true' the Phase will start automatically, otherwise it requires to call the `start()` Method
+    - **description**: If it is 'true' the Phase will start automatically, otherwise it requires to call the [`start()`](#start) Method
     - **default**: `false`
 - `parent`
   - **type**: `Class`
   - **description**: The Phase class to attach the new Phase
 ___
 ### `Child(description, options)`
-This Method return a new Phase Object attached to the main Phase parent    
+This Method return a new Phaser Object attached to the main Phase parent    
 and called with the correct parameter. This will be a subPhase.
 
 #### Params
@@ -114,7 +113,7 @@ and called with the correct parameter. This will be a subPhase.
   - **description**: Some options for the Phase
 ___
 ### `task(name, exec, options)`
-This Method return a new `Task` Object, called with the correct parameters return   
+This Method return a new [`Task`](#task) Object, called with the correct parameters return   
 a new task in the final log.
 
 #### Params
@@ -159,7 +158,7 @@ After you call the error Method it will stop all the Tasks, it will clear the qu
 If the error is not 'fatal' it will write the error message and continue to other Phase, otherwise it will stop all the Phase.
 ___
 ### `waitAllTasks()`
-This Method expects all tasks in the Phase to be resolved before generating the Log.   It is usually called with the `start()` Method.
+This Method expects all tasks in the Phase to be resolved before generating the Log.   It is usually called with the [`start()`](#start) Method.
 
 #### Examples
 ```javascript
@@ -171,7 +170,7 @@ This Method expects all tasks in the Phase to be resolved before generating the 
 ```
 ___
 ## `Writer()`
-This Module is used by `Phaser()` and `Task()` to write all the information in the console. It contains the class `Writer` and some Methods for any type of message you need to print in the console.
+This Module is used by [`Phaser()`](#phaser) and [`Task()`](#task) to write all the information in the console. It contains the class `Writer` and some Methods for any type of message you need to print in the console.
 
 ### `constructor(generation, transporter)`
 The constructor sets the correct options to use all the Methods.
