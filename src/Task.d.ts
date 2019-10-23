@@ -85,9 +85,6 @@ class Task {
   /** Indicate if this is the last task of pool */
   isLast: boolean
 
-  /** Start a Task */
-  start(): void
-
   /** Build a new Counter */
   counter(name: string, initial?: number, state?: 'normal' | 'warning' | 'error' | 'success'): ITaskCounter
 
